@@ -1,0 +1,65 @@
+plugins {
+    id "org.sonarqube" version "2.2.1"
+}
+apply plugin: 'com.android.library'
+
+sonarqube {
+    properties {
+
+        property "sonar.sources", "src/main/java"
+        // Defines where the java files are
+        property "sonar.binaries", "build/intermediates/classes/debug"
+        property "sonar.libraries", libraries
+        // Defines where the xml files are
+        property "sonar.java.binaries", "build/intermediates/classes/debug"
+        property "sonar.java.libraries", libraries
+
+        property "sonar.tests", "src/test/java, src/androidTest/java"
+
+        property "sonar.java.test.binaries", "build/intermediates/classes/debug"
+        property "sonar.java.test.libraries", libraries
+
+        property "sonar.jacoco.reportPath", "build/jacoco/testDebugUnitTest.exec"
+        property "sonar.java.coveragePlugin", "jacoco"
+        property "sonar.junit.reportsPath", "build/test-results/Debug"
+        property "sonar.android.lint.report", "build/outputs/lint-results.xml"
+
+        property "sonar.projectName", "SecurityUtils"
+        property "sonar.projectKey", "SecurityUtils"
+
+        property "sonar.sourceEncoding","UTF-8"
+        property "sonar.sources","."
+        property "sonar.exclusions","build/**,**/*.png,src/androidTest/**,src/test/**,src/**/res/**,src/main/assets/**,*.iml,*.gradle,*.json,*.pro,*.gitignore,*.xml"
+    }
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    testOptions {
+        unitTests {
+            returnDefaultValues = true
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+}
