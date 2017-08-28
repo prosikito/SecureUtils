@@ -1,7 +1,6 @@
 package com.cegrange.securityutils;
 
 import java.io.UnsupportedEncodingException;
-import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 
@@ -32,8 +31,7 @@ public class SecureString {
         try {
             return Crypto.decode(value);
         } catch (NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException |
-                BadPaddingException | IllegalBlockSizeException | UnsupportedEncodingException |
-                InvalidAlgorithmParameterException e) {
+                BadPaddingException | IllegalBlockSizeException | UnsupportedEncodingException e) {
             Logger.log(e);
             return new String(value);
         }
@@ -43,8 +41,7 @@ public class SecureString {
         try {
             this.value = Crypto.encode(value);
         } catch (NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException |
-                BadPaddingException | IllegalBlockSizeException | UnsupportedEncodingException |
-                InvalidAlgorithmParameterException e) {
+                BadPaddingException | IllegalBlockSizeException | UnsupportedEncodingException e) {
             Logger.log(e);
             this.value = value.getBytes();
         }
@@ -54,18 +51,10 @@ public class SecureString {
         return decode().isEmpty();
     }
 
-    public boolean equals(@Nonnull SecureString secureString){
+    public boolean isEqualTo(@Nonnull SecureString secureString){
+        if (secureString == null)
+            return false;
         return secureString.toString().equals(this.toString());
-    }
-
-    @Override
-    public boolean equals(Object object){
-        return super.equals(object);
-    }
-
-    @Override
-    public int hashCode() {
-        return super.hashCode();
     }
 
     public String getValue(){

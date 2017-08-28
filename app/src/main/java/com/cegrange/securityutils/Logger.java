@@ -11,6 +11,10 @@ class Logger {
 
     private static final String TAG = "Security Utils";
 
+    private Logger() {
+        // hide public constructor
+    }
+
     static void log(Exception e){
         if (BuildConfig.DEBUG)
             Log.e(TAG, e.getMessage());

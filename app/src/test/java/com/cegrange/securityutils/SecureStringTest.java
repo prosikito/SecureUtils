@@ -23,13 +23,13 @@ public class SecureStringTest {
     public void equalsIsCorrect(){
         SecureString secureString1 = new SecureString("dummy test");
         SecureString secureString2 = new SecureString("dummy test");
-        assertEquals(secureString1.equals(secureString2), true);
+        assertEquals(secureString1.isEqualTo(secureString2), true);
     }
 
     @Test
     public void notEqualsIsCorrect(){
         SecureString secureString1 = new SecureString("dummy test");
         SecureString secureString2 = new SecureString("different dummy test");
-        assertEquals(secureString1.equals(secureString2), false);
+        assertEquals(secureString1.isEqualTo(secureString2), false);
     }
 }

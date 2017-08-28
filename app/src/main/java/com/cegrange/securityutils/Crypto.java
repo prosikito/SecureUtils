@@ -1,7 +1,6 @@
 package com.cegrange.securityutils;
 
 import java.io.UnsupportedEncodingException;
-import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
@@ -11,7 +10,6 @@ import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
-import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
@@ -21,32 +19,31 @@ import javax.crypto.spec.SecretKeySpec;
 
 class Crypto {
 
-    private static final byte[] iv = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-    private static final IvParameterSpec ivspec = new IvParameterSpec(iv);
-    private static final String key = "1234567890123456";
+    private static final String KEY = "1234567890123456";
+    private static final String ENCODING = "UTF-8";
 
     private Crypto(){
         // unused
     }
 
     private static SecretKey generateKey() throws UnsupportedEncodingException {
-        return new SecretKeySpec(Arrays.copyOf(key.getBytes("UTF-8"), 16), "AES");    }
+        return new SecretKeySpec(Arrays.copyOf(KEY.getBytes(ENCODING), 16), "AES");    }
 
     static byte[] encode(String message)
             throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException,
-            IllegalBlockSizeException, BadPaddingException, UnsupportedEncodingException, InvalidAlgorithmParameterException {
+            IllegalBlockSizeException, BadPaddingException, UnsupportedEncodingException {
         /* Encrypt the message. */
         Cipher cipher = Cipher.getInstance("AES");
         cipher.init(Cipher.ENCRYPT_MODE, generateKey());
-        return cipher.doFinal(message.getBytes("UTF-8"));
+        return cipher.doFinal(message.getBytes(ENCODING));
     }
 
     static String decode(byte[] cipherText)
             throws NoSuchPaddingException, NoSuchAlgorithmException,
-            InvalidKeyException, BadPaddingException, IllegalBlockSizeException, UnsupportedEncodingException, InvalidAlgorithmParameterException {
+            InvalidKeyException, BadPaddingException, IllegalBlockSizeException, UnsupportedEncodingException {
         /* Decrypt the message, given derived encContentValues and initialization vector. */
         Cipher cipher = Cipher.getInstance("AES");
         cipher.init(Cipher.DECRYPT_MODE, generateKey());
-        return new String(cipher.doFinal(cipherText), "UTF-8");
+        return new String(cipher.doFinal(cipherText), ENCODING);
     }
 }
