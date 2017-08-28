@@ -7,18 +7,7 @@ sonarqube {
     properties {
 
         property "sonar.sources", "src/main/java"
-        // Defines where the java files are
-        property "sonar.binaries", "build/intermediates/classes/debug"
-        property "sonar.libraries", libraries
-        // Defines where the xml files are
-        property "sonar.java.binaries", "build/intermediates/classes/debug"
-        property "sonar.java.libraries", libraries
-
         property "sonar.tests", "src/test/java, src/androidTest/java"
-
-        property "sonar.java.test.binaries", "build/intermediates/classes/debug"
-        property "sonar.java.test.libraries", libraries
-
         property "sonar.jacoco.reportPath", "build/jacoco/testDebugUnitTest.exec"
         property "sonar.java.coveragePlugin", "jacoco"
         property "sonar.junit.reportsPath", "build/test-results/Debug"
