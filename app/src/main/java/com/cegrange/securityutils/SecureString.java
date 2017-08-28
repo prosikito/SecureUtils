@@ -5,6 +5,7 @@ import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 
+import javax.annotation.Nonnull;
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
@@ -22,6 +23,7 @@ public class SecureString {
         encode(value);
     }
 
+    @Override
     public String toString(){
         return decode();
     }
@@ -52,8 +54,18 @@ public class SecureString {
         return decode().isEmpty();
     }
 
-    public boolean equals(SecureString secureString){
+    public boolean equals(@Nonnull SecureString secureString){
         return secureString.toString().equals(this.toString());
+    }
+
+    @Override
+    public boolean equals(Object object){
+        return super.equals(object);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
     }
 
     public String getValue(){
