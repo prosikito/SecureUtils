@@ -2,6 +2,7 @@ plugins {
     id "org.sonarqube" version "2.2.1"
 }
 apply plugin: 'com.android.library'
+apply from: '../gradle/jacoco.gradle'
 
 sonarqube {
     properties {
@@ -36,6 +37,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            testCoverageEnabled true
         }
     }
     testOptions {
