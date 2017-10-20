@@ -1,10 +1,14 @@
 package com.cegrange.securityutils;
 
+
+import com.cegrange.securityutils.crypto.AES256PKCS7Padding;
+
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 
-import javax.annotation.Nonnull;
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
@@ -16,48 +20,49 @@ import javax.crypto.NoSuchPaddingException;
 
 public class SecureString {
 
-    private byte[] value;
+    private String value;
+    private String key;
 
-    public SecureString(String value) {
-        encode(value);
+    public SecureString(String key, String value)
+            throws NoSuchPaddingException, BadPaddingException, InvalidKeyException, NoSuchAlgorithmException, IllegalBlockSizeException, UnsupportedEncodingException, InvalidAlgorithmParameterException {
+        this.key   = key;
+        this.value = encodeValue(value);
     }
 
-    @Override
-    public String toString(){
-        return decode();
+    private String decodeValue() throws NoSuchPaddingException, NoSuchAlgorithmException,
+            IOException, BadPaddingException,
+            IllegalBlockSizeException, InvalidAlgorithmParameterException,
+            InvalidKeyException {
+        return AES256PKCS7Padding.decryptAES256PKCS7Padding(key, value);
     }
 
-    private String decode(){
-        try {
-            return Crypto.decode(value);
-        } catch (NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException |
-                BadPaddingException | IllegalBlockSizeException | UnsupportedEncodingException e) {
-            Logger.log(e);
-            return new String(value);
-        }
+    private String encodeValue(String value)
+            throws NoSuchPaddingException, NoSuchAlgorithmException,
+            UnsupportedEncodingException, BadPaddingException,
+            IllegalBlockSizeException, InvalidAlgorithmParameterException,
+            InvalidKeyException {
+        return AES256PKCS7Padding.encryptAES256PKCS7Padding(key, value);
     }
 
-    private void encode(String value){
-        try {
-            this.value = Crypto.encode(value);
-        } catch (NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException |
-                BadPaddingException | IllegalBlockSizeException | UnsupportedEncodingException e) {
-            Logger.log(e);
-            this.value = value.getBytes();
-        }
+    public boolean isEmpty()
+            throws NoSuchPaddingException, InvalidAlgorithmParameterException, NoSuchAlgorithmException,
+            IOException, BadPaddingException, IllegalBlockSizeException, InvalidKeyException {
+        return decoded().isEmpty();
     }
 
-    public boolean isEmpty(){
-        return decode().isEmpty();
+    public boolean isEqualTo(SecureString secureString)
+            throws NoSuchPaddingException, InvalidAlgorithmParameterException, NoSuchAlgorithmException,
+            IOException, BadPaddingException, IllegalBlockSizeException, InvalidKeyException {
+        return secureString != null && secureString.decoded().equals(this.decoded());
     }
 
-    public boolean isEqualTo(@Nonnull SecureString secureString){
-        if (secureString == null)
-            return false;
-        return secureString.toString().equals(this.toString());
+    public String decoded()
+            throws NoSuchPaddingException, InvalidKeyException, NoSuchAlgorithmException, IOException,
+            BadPaddingException, IllegalBlockSizeException, InvalidAlgorithmParameterException {
+        return decodeValue();
     }
 
-    public String getValue(){
-        return new String(value);
+    public String encoded(){
+        return value;
     }
 }

@@ -1,0 +1,105 @@
+
+Hsquid:UselessParenthesesCheck"!Remove these useless parentheses.(„Áµ
+lsquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û
+lsquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û
+qsquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ÂïËÚùÿÿÿÿ
+qsquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ÂïËÚùÿÿÿÿ
+qsquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(¶£Àüÿÿÿÿ
+qsquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(¶£Àüÿÿÿÿ
+qsquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(¶£Àüÿÿÿÿ
+qsquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(¶£Àüÿÿÿÿ
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Ò¡‹’üÿÿÿÿ
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(±ÇÉ·ùÿÿÿÿ
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(èê‰¼ıÿÿÿÿ
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(øèÓâÿÿÿÿÿ
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(öè¥—üÿÿÿÿ
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(‰êè¦
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ÉéÖ¼
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(êÎì«ıÿÿÿÿ
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¦¦ÒÄ
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ñÌ›úùÿÿÿÿ
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(µ¾‘œ
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(êâ‘ûøÿÿÿÿ
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ë°¨À
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Ä·¦·ÿÿÿÿÿ
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Æ¼ÏŞ
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ÂÊü–
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(€Çüç
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¾Ì¯Æ
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(—ÊçÈüÿÿÿÿ
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¤ÜäÂÿÿÿÿÿ
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(‘®êşúÿÿÿÿ
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(×ºö¹
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(«Ííîşÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Š˜³†üÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¢“ÉÖ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ó±ÎÚ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(âŒÏš
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ô­®ùúÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ˆ©ßşùÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(õ¸Ò‹úÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ôã“ª
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ôã“ª
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¶£Àüÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¶£Àüÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¶£Àüÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¶£Àüÿÿÿÿ
+Qsquid:S2589"7Remove this expression which always evaluates to "true"(¬µÖşÿÿÿÿ
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(ã›˜š
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(Ë ò±
+fsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(òëû
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 44 to the 15 allowed.(Ÿœãºùÿÿÿÿ
+_squid:S2259"EA "NullPointerException" could be thrown; "encoded" is nullable here.(Ä°Óèıÿÿÿÿ
+Usquid:S2259"AA "NullPointerException" could be thrown; "oos" is nullable here.(Ü‰¤B
+[squid:S2259"AA "NullPointerException" could be thrown; "bos" is nullable here.(‡êÉüûÿÿÿÿ
+Wsquid:S2259"BA "NullPointerException" could be thrown; "gzos" is nullable here.(ÈüúÀ
+Vsquid:S2259"AA "NullPointerException" could be thrown; "out" is nullable here.(ì…ò­
+[squid:S2259"AA "NullPointerException" could be thrown; "bis" is nullable here.(èûÂÆùÿÿÿÿ
+Vsquid:S2259"AA "NullPointerException" could be thrown; "ois" is nullable here.(Í”°¢
+\squid:S2259"BA "NullPointerException" could be thrown; "bais" is nullable here.(¼¬ä¦øÿÿÿÿ
+Vsquid:S2259"AA "NullPointerException" could be thrown; "out" is nullable here.(ì…ò­
+Vsquid:S2259"BA "NullPointerException" could be thrown; "gzis" is nullable here.(“­Ğs
+Wsquid:S2259"BA "NullPointerException" could be thrown; "baos" is nullable here.(­¾»Œ
+[squid:S2259"AA "NullPointerException" could be thrown; "bis" is nullable here.(èûÂÆùÿÿÿÿ
+[squid:S2259"AA "NullPointerException" could be thrown; "bos" is nullable here.(‡êÉüûÿÿÿÿ
+Wsquid:S2259"BA "NullPointerException" could be thrown; "gzos" is nullable here.(ÈüúÀ
+squid:S1845"eRename method "encode" to prevent any misunderstanding/clash with field "ENCODE" defined on line 160.(üŸ¾áüÿÿÿÿ
+ysquid:S1845"eRename method "encode" to prevent any misunderstanding/clash with field "ENCODE" defined on line 160.(¥üÑ\
+zsquid:S1845"eRename method "decode" to prevent any misunderstanding/clash with field "DECODE" defined on line 164.( Ö–á
+zsquid:S1845"eRename method "decode" to prevent any misunderstanding/clash with field "DECODE" defined on line 164.(Ë ò±
+zsquid:S1845"eRename method "decode" to prevent any misunderstanding/clash with field "DECODE" defined on line 164.(ºœËÚ
+ysquid:S1845"eRename method "decode" to prevent any misunderstanding/clash with field "DECODE" defined on line 164.(òëû
+>squid:S00108")Either remove or fill this block of code.(Ü‰¤B
+?squid:S00108")Either remove or fill this block of code.(ÈüúÀ
+Dsquid:S00108")Either remove or fill this block of code.(ù¾¾’ûÿÿÿÿ
+?squid:S00108")Either remove or fill this block of code.(­¾»Œ
+?squid:S00108")Either remove or fill this block of code.(ÈüúÀ
+Dsquid:S00108")Either remove or fill this block of code.(ù¾¾’ûÿÿÿÿ
+?squid:S00108")Either remove or fill this block of code.(­¾»Œ
+?squid:S00108")Either remove or fill this block of code.(­¾»Œ
+>squid:S00108")Either remove or fill this block of code.(“­Ğs
+Dsquid:S00108")Either remove or fill this block of code.(¼¬ä¦øÿÿÿÿ
+Dsquid:S00108")Either remove or fill this block of code.(¼¬ä¦øÿÿÿÿ
+?squid:S00108")Either remove or fill this block of code.(Í”°¢
+Dsquid:S00108")Either remove or fill this block of code.(‡êÉüûÿÿÿÿ
+Dsquid:S00108")Either remove or fill this block of code.(‡êÉüûÿÿÿÿ
+Dsquid:S00108")Either remove or fill this block of code.(èûÂÆùÿÿÿÿ
+Dsquid:S00108")Either remove or fill this block of code.(èûÂÆùÿÿÿÿ
+Dsquid:S00108")Either remove or fill this block of code.(ô¯ãŸşÿÿÿÿ
+Dsquid:S00108")Either remove or fill this block of code.(ô¯ãŸşÿÿÿÿ
+[squid:S2147"FCombine this catch with the one at line 1374, which has the same body.(ü¨áé
+lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İç¡ÿÿÿÿÿ
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ²„¾
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ²„¾
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
