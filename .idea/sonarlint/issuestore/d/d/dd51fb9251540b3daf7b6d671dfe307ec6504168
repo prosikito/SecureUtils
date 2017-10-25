@@ -60,20 +60,20 @@ gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 
 gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(Ë ò±
 fsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(òëû
 lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 44 to the 15 allowed.(Ÿœãºùÿÿÿÿ
-_squid:S2259"EA "NullPointerException" could be thrown; "encoded" is nullable here.(Ä°Óèýÿÿÿÿ
-Usquid:S2259"AA "NullPointerException" could be thrown; "oos" is nullable here.(Ü‰¤B
-[squid:S2259"AA "NullPointerException" could be thrown; "bos" is nullable here.(‡êÉüûÿÿÿÿ
 Wsquid:S2259"BA "NullPointerException" could be thrown; "gzos" is nullable here.(ÈüúÀ
-Vsquid:S2259"AA "NullPointerException" could be thrown; "out" is nullable here.(ì…ò­
 [squid:S2259"AA "NullPointerException" could be thrown; "bis" is nullable here.(èûÂÆùÿÿÿÿ
 Vsquid:S2259"AA "NullPointerException" could be thrown; "ois" is nullable here.(Í”°¢
-\squid:S2259"BA "NullPointerException" could be thrown; "bais" is nullable here.(¼¬ä¦øÿÿÿÿ
 Vsquid:S2259"AA "NullPointerException" could be thrown; "out" is nullable here.(ì…ò­
-Vsquid:S2259"BA "NullPointerException" could be thrown; "gzis" is nullable here.(“­Ðs
-Wsquid:S2259"BA "NullPointerException" could be thrown; "baos" is nullable here.(­¾»Œ
 [squid:S2259"AA "NullPointerException" could be thrown; "bis" is nullable here.(èûÂÆùÿÿÿÿ
-[squid:S2259"AA "NullPointerException" could be thrown; "bos" is nullable here.(‡êÉüûÿÿÿÿ
+Vsquid:S2259"AA "NullPointerException" could be thrown; "out" is nullable here.(ì…ò­
+Wsquid:S2259"BA "NullPointerException" could be thrown; "baos" is nullable here.(­¾»Œ
 Wsquid:S2259"BA "NullPointerException" could be thrown; "gzos" is nullable here.(ÈüúÀ
+Vsquid:S2259"BA "NullPointerException" could be thrown; "gzis" is nullable here.(“­Ðs
+\squid:S2259"BA "NullPointerException" could be thrown; "bais" is nullable here.(¼¬ä¦øÿÿÿÿ
+_squid:S2259"EA "NullPointerException" could be thrown; "encoded" is nullable here.(Ä°Óèýÿÿÿÿ
+[squid:S2259"AA "NullPointerException" could be thrown; "bos" is nullable here.(‡êÉüûÿÿÿÿ
+[squid:S2259"AA "NullPointerException" could be thrown; "bos" is nullable here.(‡êÉüûÿÿÿÿ
+Usquid:S2259"AA "NullPointerException" could be thrown; "oos" is nullable here.(Ü‰¤B
 squid:S1845"eRename method "encode" to prevent any misunderstanding/clash with field "ENCODE" defined on line 160.(üŸ¾áüÿÿÿÿ
 ysquid:S1845"eRename method "encode" to prevent any misunderstanding/clash with field "ENCODE" defined on line 160.(¥üÑ\
 zsquid:S1845"eRename method "decode" to prevent any misunderstanding/clash with field "DECODE" defined on line 164.( Ö–á
